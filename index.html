@@ -194,10 +194,7 @@
         </div>
     </nav>
 
-   <!-- Add this to your <head> for the industrial font -->
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@600;700&display=swap" rel="stylesheet">
 
-This was okay, but then it disappeared. Can you fix the entire hero section for me so I can just copy paste that in?
 
 ```html
 <!-- ==================== HERO SECTION ==================== -->
@@ -205,7 +202,7 @@ This was okay, but then it disappeared. Can you fix the entire hero section for 
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
         <img src="HJiot.jpg" alt="Excavation equipment at work" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-slate-900/40"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/50"></div>
     </div>
 
     <!-- Left Content -->
@@ -228,7 +225,7 @@ This was okay, but then it disappeared. Can you fix the entire hero section for 
             </div>
 
             <!-- Headline -->
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
                 Excavation Done Right.
             </h1>
 
@@ -239,132 +236,87 @@ This was okay, but then it disappeared. Can you fix the entire hero section for 
 
             <!-- CTAs -->
             <div class="flex flex-col sm:flex-row gap-4">
-                <a href="tel:250-258-3865" class="btn-primary bg-brand-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-600 flex items-center justify-center gap-3">
+                <a href="tel:250-258-3865" 
+                   class="btn-primary bg-brand-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-600 flex items-center justify-center gap-3 transition-all">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                     </svg>
                     <span>Call (250) 258-3865</span>
                 </a>
-                <a href="#contact" class="btn-secondary bg-white text-slate-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 text-center">
+                <a href="#contact" 
+                   class="btn-secondary bg-white text-slate-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 text-center transition-all">
                     Get Free Quote
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- RIGHT SIDE: A-ROCK Heavy Drop Animation -->
-    <div class="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2 z-10 pr-8 xl:pr-16 pointer-events-none">
+    <!-- RIGHT SIDE: A-ROCK Heavy Text (Desktop Only) -->
+    <div class="hidden lg:block absolute right-8 xl:right-16 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
         <div class="flex flex-col items-end">
-            <!-- A-ROCK on same line -->
             <div class="flex items-baseline leading-none">
-                <span class="heavy-text-a text-9xl xl:text-[10rem] text-white tracking-[-0.04em]" 
-                      style="font-family: 'Bebas Neue', Impact, sans-serif; text-shadow: 0 12px 50px rgba(0,0,0,0.9);">
+                <span class="heavy-text-a text-9xl xl:text-[10rem] text-white tracking-[-0.05em]"
+                      style="font-family: 'Bebas Neue', Impact, sans-serif; text-shadow: 0 15px 60px rgba(0,0,0,0.85);">
                     A-
                 </span>
-                <span class="heavy-text-rock text-9xl xl:text-[10rem] text-white tracking-[-0.04em]" 
-                      style="font-family: 'Bebas Neue', Impact, sans-serif; text-shadow: 0 12px 50px rgba(0,0,0,0.9);">
+                <span class="heavy-text-rock text-9xl xl:text-[10rem] text-white tracking-[-0.05em]"
+                      style="font-family: 'Bebas Neue', Impact, sans-serif; text-shadow: 0 15px 60px rgba(0,0,0,0.85);">
                     ROCK
                 </span>
             </div>
-            
-            <!-- EARTHWORKS below -->
-            <div class="heavy-text-earthworks text-7xl xl:text-8xl text-brand-500 tracking-[0.08em] leading-none -mt-3" 
-                 style="font-family: 'Bebas Neue', Impact, sans-serif; text-shadow: 0 8px 30px rgba(234, 79, 56, 0.7);">
+           
+            <div class="heavy-text-earthworks text-7xl xl:text-8xl text-brand-500 tracking-[0.06em] leading-none -mt-4"
+                 style="font-family: 'Bebas Neue', Impact, sans-serif; text-shadow: 0 10px 40px rgba(234, 79, 56, 0.75);">
                 EARTHWORKS
             </div>
         </div>
     </div>
 
     <!-- Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-        <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
+        <svg class="w-6 h-6 text-white/60 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
     </div>
 </section>
 
+<!-- Heavy Text Animation Styles -->
 <style>
-/* Heavy Drop Animation - Text starts visible and animates in */
-
 .heavy-text-a {
     display: inline-block;
-    animation: slamA 1.2s ease-out;
+    animation: slamA 1.2s ease-out forwards;
 }
-
 .heavy-text-rock {
     display: inline-block;
-    animation: slamRock 1.3s ease-out 0.2s both;
+    animation: slamRock 1.3s ease-out 0.2s forwards;
 }
-
 .heavy-text-earthworks {
     display: inline-block;
-    animation: slamEarth 1s ease-out 0.5s both;
+    animation: slamEarth 1s ease-out 0.5s forwards;
 }
 
-/* A- drops from top left with rotation */
 @keyframes slamA {
-    0% {
-        opacity: 0;
-        transform: translateY(-400px) translateX(-100px) rotate(-15deg);
-        filter: blur(8px);
-    }
-    60% {
-        opacity: 1;
-        transform: translateY(20px) translateX(10px) rotate(3deg);
-        filter: blur(0);
-    }
-    80% {
-        transform: translateY(-10px) rotate(-2deg);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) translateX(0) rotate(0);
-    }
+    0% { opacity: 0; transform: translateY(-400px) translateX(-120px) rotate(-18deg); filter: blur(10px); }
+    60% { opacity: 1; transform: translateY(25px) translateX(15px) rotate(4deg); filter: blur(0); }
+    80% { transform: translateY(-8px) rotate(-2deg); }
+    100% { opacity: 1; transform: translateY(0) translateX(0) rotate(0); }
 }
 
-/* ROCK drops from top right with rotation */
 @keyframes slamRock {
-    0% {
-        opacity: 0;
-        transform: translateY(-400px) translateX(100px) rotate(15deg);
-        filter: blur(8px);
-    }
-    60% {
-        opacity: 1;
-        transform: translateY(20px) translateX(-10px) rotate(-3deg);
-        filter: blur(0);
-    }
-    80% {
-        transform: translateY(-10px) rotate(2deg);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) translateX(0) rotate(0);
-    }
+    0% { opacity: 0; transform: translateY(-400px) translateX(120px) rotate(18deg); filter: blur(10px); }
+    60% { opacity: 1; transform: translateY(25px) translateX(-15px) rotate(-4deg); filter: blur(0); }
+    80% { transform: translateY(-8px) rotate(2deg); }
+    100% { opacity: 1; transform: translateY(0) translateX(0) rotate(0); }
 }
 
-/* EARTHWORKS drops straight down hard */
 @keyframes slamEarth {
-    0% {
-        opacity: 0;
-        transform: translateY(-300px) scale(1.2);
-        filter: blur(6px);
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(15px) scale(0.98);
-        filter: blur(0);
-    }
-    75% {
-        transform: translateY(-8px) scale(1.02);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
+    0% { opacity: 0; transform: translateY(-280px) scale(1.25); filter: blur(8px); }
+    55% { opacity: 1; transform: translateY(18px) scale(0.97); filter: blur(0); }
+    75% { transform: translateY(-6px) scale(1.03); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-/* Mobile hide */
+/* Hide heavy text on mobile */
 @media (max-width: 1024px) {
     .heavy-text-a, .heavy-text-rock, .heavy-text-earthworks {
         display: none !important;
